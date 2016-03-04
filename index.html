@@ -20,6 +20,7 @@
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="manifest.json">
 	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="stylesheet" href="demo-files/demo.css">	
 	<meta name="apple-mobile-web-app-title" content="IMS">
 	<meta name="application-name" content="IMS">
 	<meta name="msapplication-TileColor" content="#da532c">
@@ -36,7 +37,6 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
       </head>
   <body>
-	  
 	  <!-- NAVBAR
 	      ================================================== -->
 	  <nav class="navbar navbar-default" role="navigation">
@@ -48,23 +48,25 @@
 			      <span class="icon-bar"></span>
 			      <span class="icon-bar"></span>
 			    </button>
-			    
 			    <!--Replace text with your app name or logo image-->
 			    <a class="navbar-brand" href="#"><img src="img/header.png"></a>
-			    
 			  </div>
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+				  
 			    <ul class="nav navbar-nav">
-			      <li><a onclick="$('header').animatescroll({padding:71});">Inicio</a></li>
-			      <li><a onclick="$('.detail').animatescroll({padding:71});">Servicios</a></li>
-			      <li><a onclick="$('.features').animatescroll({padding:71});">Equipamiento</a></li>
-			      <li><a onclick="$('.social').animatescroll({padding:71});">Social	</a></li>
+			      <li><a onclick="$('header').animatescroll({padding:71});">INICIO</a></li>
+			      <li><a onclick="$('.detail').animatescroll({padding:71});">SERVICIOS</a></li>
+				  <li><a onclick="$('.monitorapp').animatescroll({padding:71});">APP</a></li>
+				  <li><a onclick="$('.features').animatescroll({padding:71});">EQUIPAMIENTO</a></li>
+			      <li><a onclick="$('.social').animatescroll({padding:71});">CONTACTO</a></li>
+					
+					<li><a class="navbar2 navbar2-default" href="http://app.industrialms.cl" target="_blank">WEB APP</a></li>
+				
 			    </ul>
+				 
 			  </div>
 		  </div>
 	  </nav>
-	  
-	  
 	   <!-- HEADER
 	   ================================================== -->	  
 	  <header>
@@ -84,7 +86,6 @@
 					      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 					      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 					    </ol>
-					  
 					    <!-- Wrapper for slides -->
 					    <div class="carousel-inner">
 					      <div class="item active">
@@ -96,7 +97,6 @@
 					      <div class="item">
 					        <img src="img/screenshots/app_alt-3.jpg" alt="App Screen 3">
 					      </div>
-					      
 					    </div>
 					  </div>
 					</div>
@@ -104,23 +104,19 @@
 			</div>    
 		</div>
 	 </header>
-	  
-	  
 	  <!-- PURCHASE
 	      ================================================== -->
 	  <section class="purchase">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-md-offset-2 col-md-8">
-					 <h1>Entregamos servicios innovadores priorizando tecnología de punta.</h1>
-					 <p class="lead">Apps para monitoreo online sobre supresión de polvo en chancados.</p>
+					 <h1>Entregamos servicios, equipos y software innovadores priorizando tecnología de punta.</h1>
+					 <p class="lead">Innovaciones Tecnológicas Aplicadas a los Procesos</p>
 					 	    <button type="button" class="app-store"></button>	
 				  </div>
 			  </div>
 		  </div>
 	  </section>
-	  
-	  
 	  <!-- PAYOFF 
 	      ================================================== -->
 	  <section class="payoff">
@@ -132,32 +128,35 @@
 			  </div>
 		  </div>	  
 	  </section>
-	  
-	  
 	  <!-- DETAILS 
 	      ================================================== -->
 	  <section class="detail">
 		<div class="container">
+	  			  <div class="col-md-12">
+	  			  	<h2>Servicios</h2>
+	  			   </div>
 			<div class="row">
 				<div class="col-md-12">
 					<div id="carousel-example-generic-2" class="carousel slide">
 						<!-- Indicators -->
-					  <ol class="carousel-indicators">
-					  </ol>	
-										
+					  <ol class="carousel-indicators-2">
+					  </ol>					
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner">
 					    <div class="item active">
 					      	<div class="row">
 					      		<div class="col-sm-12 col-md-offset-1 col-md-6">
 					      			<h1>Medición de polvo:</h1>
-					      			<p>Plantas de chancado, correas y caminos.</p>
+					      			<p>· Plantas de chancado y correas.</p>
+									<p>· Caminos</p>
+									<p>· (PM10 – PM 2,5 – Polvo Total)</p>
 					      		</div>
 					      		<div class="col-sm-12 col-md-5">
-					      				<img src="img/screenshots/screen1.jpg" class="img-responsive" alt="App Screen 1">
+					      				<img src="img/screenshots/screen1.jpg" class="img-responsive" alt="Medición de polvo">
 					      		</div>
 					      	</div>
 					    </div>
+						<!--
 					    <div class="item">
 					    	<div class="row">
 					    		<div class="col-sm-12 col-md-offset-1 col-md-6">
@@ -169,6 +168,7 @@
 					    		</div>
 					    	</div>
 						</div>
+						-->
 					    <div class="item">
 					      <div class="row">
 					      	<div class="col-sm-12 col-md-offset-1 col-md-6">
@@ -176,22 +176,64 @@
 					      		<p>Sistemas de Mitigación de Polvo con Neblina Seca en Tasas de Descarga en Chancadores Primarios.</p>
 					      	</div>
 					      	<div class="col-sm-12 col-md-5">
-					      			<img src="img/screenshots/screen3.jpg" class="img-responsive" alt="App Screen 3">
+					      			<img src="img/screenshots/screen3.jpg" class="img-responsive" alt="Ingeniería, Diseño y Montaje">
+					      	</div>
+					      </div>
+					    </div>
+						 <div class="item">
+					      <div class="row">
+					      	<div class="col-sm-12 col-md-offset-1 col-md-6">
+					      		<h1>Eficiencia Energética, Generación Energía Recursos Renovables</h1>
+					      		<p>· Ingeniería y montaje sistemas solares y/o eólicos domestico e industriales: Calefacción y electricidad.</p>
+								<p>· Campamentos, Refugios Mineros Auto Sustentables</p>  
+					      	</div>
+					      	<div class="col-sm-12 col-md-5">
+					      			<img src="img/screenshots/screen5.jpg" class="img-responsive" alt="Eficiencia Energética">
 					      	</div>
 					      </div>
 					    </div>
 						<div class="item">
 					      <div class="row">
 					      	<div class="col-sm-12 col-md-offset-1 col-md-6">
-					      		<h1>Monitoreo Web en Tiempo Real:</h1>
-					      		<p>Agentes Contaminantes</p>
-								<p>Parámetros Específicos Según Interés de Cliente</p>
+					      		<h1>Monitoreos Ambientales</h1>
+					      		<p>· Agua</p>
+								<p>· Hidrogeología</p>
+								<p>· Suelo</p>
+								<p>· Atmosférico</p>
 					      	</div>
 					      	<div class="col-sm-12 col-md-5">
-					      			<img src="img/screenshots/screen4.jpg" class="img-responsive" alt="App Screen 3">
+					      			<img src="img/screenshots/screen6.jpg" class="img-responsive" alt="Monitoreos Ambientales">
 					      	</div>
 					      </div>
 					    </div>
+						<div class="item">
+					      <div class="row">
+					      	<div class="col-sm-12 col-md-offset-1 col-md-6">
+					      		<h1>Gestión de Residuos</h1>
+					      		<p>· Evaluación</p>
+								<p>· Reciclaje</p>
+								<p>· Transporte</p>
+								<p>· Eliminación</p>
+					      	</div>
+					      	<div class="col-sm-12 col-md-5">
+					      			<img src="img/screenshots/screen7.jpg" class="img-responsive" alt="Gestión de Residuos">
+					      	</div>
+					      </div>
+					    </div>
+						<!-- 
+						<div class="item">
+					      <div class="row">
+					      	<div class="col-sm-12 col-md-offset-1 col-md-6">
+					      		<h1>Monitoreo Web en Tiempo Real:</h1>
+					      		<p>· Agentes Contaminantes</p>
+								<p>· Parámetros Específicos Según Interés de Cliente</p>
+					      	</div>
+					      	<div class="col-sm-12 col-md-5">
+					      			<img src="img/screenshots/screen4.jpg" class="img-responsive" alt="App Screen 5">
+					      	</div>
+					      </div>
+					    </div>
+						-->
 					  </div>
 					
 					  <!-- Indicators -->
@@ -199,68 +241,149 @@
 					    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
 					    <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
 					    <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-						<li data-target="#carousel-example-generic-2" data-slide-to="3"></li>
+						<li data-target="#carousel-example-generic-2" data-slide-to="3"></li>	
+						<li data-target="#carousel-example-generic-2" data-slide-to="4"></li>
+							<!--
+						<li data-target="#carousel-example-generic-2" data-slide-to="5"></li>
+						<li data-target="#carousel-example-generic-2" data-slide-to="6"></li>
+							-->
 					  </ol>		
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	  
+	<!-- MONITORAPP 
+	      ================================================== -->
+	  <section class="monitorapp">
+		<div class="container">
+			<div class="col-md-12">
+	  			  	<h2>APP</h2>
+	  		</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="carousel-example-generic-2" class="carousel slide">				
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					      	<div class="row">
+								  <div class="col-sm-12 col-md-5">
+					      			<div class="app-screenshot">
+					      				<img src="img/screenshots/app-1.jpg" class="img-responsive" alt="App Screen 1">
+					      			</div>
+					      		</div>
+					      		<div class="col-sm-12 col-md-offset-1 col-md-6">
+					      			<h1>Monitoreo Web en Tiempo Real</h1>
+					      			<p>· Agentes Contaminantes</p>
+									<p>· Parámetros Específicos Según Interés de Cliente</p>
+					      		</div>
+					      	</div>
+					    </div>
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					  </ol>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	 <!-- APP 
+	      ================================================== -->
+	  <section class="app">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-12">
+					  <h2>Aplicación para Evaluación de efectividad de sistemas de supresión de polvo.</h2>
+					  <p>· Calculo de porcentaje de abatimiento de polvo para  distintos sistemas de supresión de polvo (antes VS después) de forma independiente y combinados  (Colectores, neblina seca, espuma surfactante, humidificación, supresores de caminos y otros)</p>
+					  <p>· Apoyado por una aplicación que nos entrega la información en tiempo real en el momento de la evaluación en terreno con equipos especializados</p>
+					  <p>· (PM10 – PM 2,5 – Polvo Total)</p>
+				  </div>
+			  </div>
+		  </div>	  
+	  </section>
+	  <!-- APP 
+	      ================================================== -->
+	  <section class="app2">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-12">
+					  <h2>Aplicación Alerta Temprana Material Particulado</h2>
+					  <p>Monitoreo meteorológico en la cuenca  del proyecto, 5 estaciones que se instalan en puntos estratégicos que determinan si las condiciones son favorables o desfavorables para ventilación y control del material particulado fino respirable en el área, por proyectos, operación y/o  erosión del medio,  a través de una aplicación que informa en tiempo real a móviles, pc y tablet para determinar riesgos asociados eventos de riesgo por mala ventilación de la cuenca como Tronaduras; esto genera gran cantidad de material particulado, el sistema alerta para que el MP no se dirija a comunidades cercanas.</p>
+				  </div>
+			  </div>
+		  </div>	  
+	  </section>
 	  <!-- FEATURES
 	      ================================================== -->
 
 	  <section class="features">
 		  <div class="container">
-			 
 			  <div class="row">
 				  <div class="col-md-12">
-	  			  		<h2>Arriendo de Equipos, Vehículos y Maquinaria</h2>
+	  			  		<h2>Arriendo de Equipos</h2>
+						<h1>Vehículos y Maquinaria en General</h1>	
 	  			   </div>
 				  <div class="col-md-4">
 					  <div class="circle"><img src="img/screenshots/equip1.gif" class="img-responsive" alt="Equipamiento 1"></div>
 					  <p>Camionetas equipadas para la minería y otras industrias.</p>
 				  </div>
-				
 				  <div class="col-md-4">
 					  <div class="circle"><img src="img/screenshots/equip2.gif" class="img-responsive" alt="Equipamiento 2"></div>
 					  <p>Camión pluma</p>
 				  </div>
-				 
 				  <div class="col-md-4">
 					  <div class="circle"><img src="img/screenshots/equip3.gif" class="img-responsive" alt="Equipamiento 3"></div>
 					  <p>Retroescavadora</p>
 				  </div>
-				  
 				  <div class="col-md-4">
 					  <div class="circle"><img src="img/screenshots/equip4.gif" class="img-responsive" alt="Equipamiento 4"></div>
 					  <p>Minicargadores</p>
 				  </div>
-				  
+			  </div>
+			  <div class="row">
+				  <div class="col-md-12">
+						<h1>Equipos Especializados</h1>	
+	  			   </div>
+				   <div class="col-md-3">
+					  <div class="circle"><img src="img/screenshots/equip5.gif" class="img-responsive" alt="Equipamiento 1"></div>
+					  <p>Dron de Vigilancia</p>
+				  </div>
+				  <div class="col-md-3">
+					  <div class="circle"><img src="img/screenshots/equip6.gif" class="img-responsive" alt="Equipamiento 2"></div>
+					  <p>TED: Elevador hidráulico móvil, diseñado específicamente para eliminar los riesgos asociados con cargas suspendidas</p>
+				  </div>
+				  <div class="col-md-3">
+					  <div class="circle"><img src="img/screenshots/equip7.gif" class="img-responsive" alt="Equipamiento 3"></div>
+					  <p>Globos de Vigilancia</p>
+				  </div>		 
 			  </div>
 		  </div>
 	  </section>
-	  
-	
 	 <!-- SOCIAL
 	     ================================================== -->
 	  <section class="social">
 	  	<div class="container">
 	  		  <div class="row">
 	  			  <div class="col-md-12">
-	  			  	<h2>Conecta con nosotros</h2>
-	  			   	<a class="icon-facebook"></a>
-	  			   	<a class="icon-twitter"></a>
-	  			   	<a class="icon-google"></a>
-	  			   	<a class="icon-instagram"></a>
-	  			   	<a class="icon-pinterest"></a>
+	  			  	<h2>Contacta con nosotros</h2>
+					<!--	
+					<a class="icon-email" href="mailto:ventas@industrialms.cl"><img src="img/icon_email.png" alt="Escríbenos"></a>
+					<a class="icon-wzp" href="tel:+56942554702"><img src="img/icon_wzp.png" alt="Contactanos"></a>
+					-->	
+	  			   	<a class="icon-twitter" href="https://twitter.com/1ndustrialMS" target="_blank" alt="Síguenos en Twitter"></a>
+					<a class="icon-linkedin" href="https://cl.linkedin.com/in/industrial-management-services-ltda-5357b0114" target="_blank" alt="Buscanos en Linkedin"></a>
+					<a class="icon-skype" href="tel:+56942554702" alt="Contactanos"></a>
+				  <div class="col-md-12">
+					<a class="icon-mail" href="mailto:ventas@industrialms.cl" alt="Escríbenos"></a>
+				  </div>  			 
+					 <!--
+					<a class="icon-icon_email" href="mailto:ventas@industrialms.cl" alt="Escríbenos"></a> 
+					<a class="icon-icon_wzp" href="tel:+56942554702" alt="Contactanos"></a> 
+					 -->	
 	  			   </div>
 	  		  </div>
 	  	  </div>	  
 	  </section>
-	  
-	
 	 <!-- GET IT 
 	     ================================================== -->
 	  <section class="get-it">
@@ -273,19 +396,10 @@
 	  			</div>
 	  			<div class="col-md-12">
 	  				<hr />
-		  			<ul>
-	                	<li><a href="#link-here">Contacto</a></li>
-	                	<li><a href="#link-here">Twitter</a></li>
-	                	<li><a href="#link-here">Soporte</a></li>
-	                	<li><a href="#link-here">Desarrollo</a></li>
-	                	<li><a href="#link-here">Privacidad</a></li>
-                	</ul>
 	  			</div>
 	  		</div>
 	  	</div>
 	  </section>
-	  
-	 
 	 <!-- JAVASCRIPT
 	     ================================================== -->
     <script src="js/jquery.js"></script>
@@ -293,5 +407,4 @@
     <script src="js/animatescroll.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/retina.min.js"></script>
-  	
 </html>
