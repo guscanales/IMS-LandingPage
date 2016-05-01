@@ -11,14 +11,14 @@ body{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+h1,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	color: #3a3a3a;
 	font-weight: 700;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
 p{
-	font-size: 2.2em;
+	font-size: 1.8em;
 }
 
 .lead{
@@ -54,27 +54,29 @@ button {
 .animated{
 	visibility: visible!important;
 }
-
 /*-----------------------------------------------------------------------------------*/
 /*	KEY COLOR
 /*-----------------------------------------------------------------------------------*/
 
 /*---- Typography ----*/
 header h1, 
-.payoff h1,
+.payoff h1, 
 .details .carousel,
 .social a:hover{
 	color: #F2D9B8;
 }
 
 .features p{
-	color: #FFF2E0;
+	color: #8C6532	;
+}
+.app h1, .app h2, .app p{
+	color: #FFF;
 }
 
 /*---- Background ----*/
 .features,
 .detail .carousel-indicators .active {
-	background: #AB8554;	
+	background: #F2D9B8;	
 }
 	
 
@@ -130,8 +132,25 @@ nav.navbar.fixed-to-top{
 	font-size: 2em;
 	font-family: 'Roboto Condensed', sans-serif;
 }
+/*-----------------------------------------------------------------------------------*/
 
-
+.navbar2-default{
+	border: none;
+	border-bottom: 0px solid #eee;
+	background: #fff;
+	opacity: 0.95;
+	display: none;
+	color: #8C6532 !important;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	color: #000 !important;	
+	cursor: pointer;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
 /*-----------------------------------------------------------------------------------*/
 /* HEADER 
 /*-----------------------------------------------------------------------------------*/
@@ -222,8 +241,8 @@ header .carousel-indicators li {
 
 .payoff{
 	overflow: hidden;
-	padding: 230px 0px 150px 0px;
-	min-height: 600px;
+	padding: 190px 0px 150px 0px;
+	min-height: 560px;
 	background: url('../img/camino.jpg');
 	background-position: center top;
 	background-repeat: repeat-x;
@@ -236,6 +255,52 @@ header .carousel-indicators li {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 2.8em;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*	APP
+/*-----------------------------------------------------------------------------------*/
+
+.app{
+	overflow: hidden;
+	padding: 120px 0px 50px 0px;
+	min-height: 590px;
+	background: url('../img/app.jpg');
+	background-position: center top;
+	background-repeat: repeat-x;
+	color: white;
+}
+
+.app h1{
+	padding-top: 95px;
+}
+
+.app h2{
+	padding-bottom: 20px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	APP2
+/*-----------------------------------------------------------------------------------*/
+
+.app2{
+	overflow: hidden;
+	padding: 110px 0px 50px 0px;
+	min-height: 560px;
+	background: url('../img/app2.jpg');
+	background-position: center top;
+	background-repeat: repeat-x;
+	color: white;
+}
+
+.app2 h1{
+	text-transform: uppercase;
+	font-weight: 200;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2.8em;
+}
+.app2 p{
+	padding-top: 20px;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	DETAIL
@@ -257,7 +322,7 @@ header .carousel-indicators li {
 }
 
 .detail .carousel h1{
-	font-size: 2.9em;
+	font-size: 2.3em;
 }
 .detail .carousel h1, .detail p{
 	text-align: left;
@@ -307,6 +372,22 @@ header .carousel-indicators li {
 	background: #ffffff;
 }
 
+.detail .carousel-indicators-2 {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 100%;
+	border-top: 0px;
+	border-bottom: 1px solid #eee;
+	background: #ffffff;
+}
+
 .detail .carousel-indicators .active {
 	width: 45px;
 	height: 5px;
@@ -325,7 +406,106 @@ header .carousel-indicators li {
 	text-indent: -999px;
 	cursor: pointer;
 }
+.detail h2{
+	color: #8C6532;
+	text-transform: uppercase;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-weight: 300;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	MONITOR APP
+/*-----------------------------------------------------------------------------------*/
 
+.monitorapp{
+	overflow: hidden;
+	padding: 15px 0px 0px 0px;
+	min-height: 500px;
+}
+
+.monitorapp .title{
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+.monitorapp .features .row{
+	margin-bottom: 40px;
+}
+
+.monitorapp .carousel h1{
+	font-size: 3.8em;
+}
+.monitorapp .carousel h1, .monitorapp p{
+	text-align: left;
+	font-weight: 300;
+}
+
+.monitorapp p{
+	color: #aaa;
+}
+
+.monitorapp .carousel-control{
+	background: none;
+}
+
+.monitorapp .app-screenshot{
+	overflow: hidden;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 95px;
+	width: 320px;
+	height: 450px;
+	background: url('../img/iphone-front.png') no-repeat;
+	background-size: 100%;
+}
+
+.monitorapp .app-screenshot img{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 4px;
+	width: 280px;
+}
+
+.monitorapp .carousel-indicators {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 5px;
+	padding-bottom: 8px;
+	width: 100%;
+	border-top: 1px solid #eee;
+	background: #ffffff;
+}
+
+.monitorapp .carousel-indicators .active {
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+}
+
+.monitorapp .carousel-indicators li {
+	display: inline-block;
+	margin: 1px;
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+	background: #eeeeee;
+	text-indent: -999px;
+	cursor: pointer;
+}
+.monitorapp h2{
+	color: #8C6532;
+	text-transform: uppercase;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	font-weight: 300;
+}
 /*-----------------------------------------------------------------------------------*/
 /*	FEATURES
 /*-----------------------------------------------------------------------------------*/
@@ -345,10 +525,15 @@ header .carousel-indicators li {
 }
 
 .features h2{
-	color: #ffffff;
+	color: #8C6532;
 	text-transform: uppercase;
-	padding-bottom: 45px;
+	padding-bottom: 10px;
 	font-weight: 300;
+}
+
+.features h1{
+	color: #8C6532;
+	padding-bottom: 25px;
 }
 
 .features .circle{
@@ -358,7 +543,7 @@ header .carousel-indicators li {
 	padding-top: 0px;
 	width: 250px;
 	height: 250px;
-	border: 1px solid #ffffff;
+	border: 0px solid #8C6532;
 	border-radius: 100%;
 	text-align: center;
 	
@@ -376,7 +561,7 @@ header .carousel-indicators li {
 
 .social{
 	overflow: hidden;
-	padding: 80px 0px 150px 0px;
+	padding: 100px 0px 100px 0px;
 	min-height: 350px;
 	background: url('../img/truck.jpg');
 	background-position: center top;
@@ -406,7 +591,7 @@ header .carousel-indicators li {
 /*-----------------------------------------------------------------------------------*/
 
 .get-it{
-	padding: 100px 0px 160px 0px;
+	padding: 80px 0px 80px 0px;
 	text-align: center;
 }
 
@@ -419,7 +604,7 @@ header .carousel-indicators li {
 
 .get-it hr{
 	margin-top: 3em;
-	margin-bottom: 3em;
+	margin-bottom: 0em;
 }
 
 .get-it ul{
@@ -486,7 +671,7 @@ header .carousel-indicators li {
 
 header, .social{
 	background-position-y: 0px;
-	background-size: 200%;
+	background-size: 150%;
 }
 
 .payoff{
@@ -498,7 +683,16 @@ header, .social{
 .payoff h1{
 	font-size: 24px;
 }
-
+.app{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	min-height: 200px;
+}
+.app2{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	min-height: 200px;
+}
 .features .col-md-4{
 	margin-bottom: 60px;
 }
